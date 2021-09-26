@@ -1,11 +1,11 @@
 
 .header-session{
-    background-color: rgb(192, 233, 233);
+    background-color: rgb(227, 240, 240);
     text-align: center;
     padding: 10px;
     margin-left: 15px;
     margin-right: 15px;
 }
 .header-total{
-    color: orange;
+    color: orangered;
 }
