@@ -1,15 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Headear from './componenet/Headear/Header.js';
-import Header from './componenet/Headear/Header.js';
-import Home from './componenet/Headear/Home/Home.js';
+import Navgticon from './componenet/Navgticon/Navgticon.js';
+import Home from './componenet/Home/Home.js';
+
+
 
 function App() {
   return (
     <div>
-      <Header></Header>
+      <Navgticon></Navgticon>
       <Home></Home>
+     
     </div>
     
    
