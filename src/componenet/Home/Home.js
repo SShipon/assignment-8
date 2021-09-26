@@ -33,7 +33,7 @@ const Home = () => {
 
                     </div>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-3 side-cart" >
                     <Addcart addTotal={addTotal}></Addcart>
                 </div>
                 

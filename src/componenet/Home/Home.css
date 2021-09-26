@@ -10,3 +10,10 @@
     border-radius: 5px;
    
 }
+.side-cart{
+    background-color:rgb(230, 188, 195);
+    width: 315px;
+    height: 100%;
+    margin-top: 10px;
+    margin-left: 5px;
+}
