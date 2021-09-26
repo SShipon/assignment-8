@@ -11,7 +11,7 @@ const Addcart = (props) => {
     }
     return (
         <div>
-            <h3>Add Count:{addTotal.length}</h3>
+            <h3><i class="fas fa-user"></i> Add Count:{addTotal.length}</h3>
             <h2>Total Cost:${totalSalary}</h2>
             <h6>
                 {

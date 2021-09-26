@@ -2,13 +2,13 @@ import React from 'react';
 import './Name.css'
 
 const Name = (props) => {
-    console.log(props);
+    
     return (
-        <div>
+        <h3> Name:
             {
                 props.add.name
             }
-        </div>
+       </h3>
     );
 };
 
