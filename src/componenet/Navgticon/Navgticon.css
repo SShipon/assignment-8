@@ -7,4 +7,9 @@
 }
 .header-total{
     color:orangered;
+    font-weight: bold;
+}
+.header{
+    font-size: 62px;
+    font-weight: bold;
 }

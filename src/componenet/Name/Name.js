@@ -4,11 +4,11 @@ import './Name.css'
 const Name = (props) => {
     
     return (
-        <h3> Name:
+        <h4> Name:
             {
                 props.add.name
             }
-       </h3>
+       </h4>
     );
 };
 

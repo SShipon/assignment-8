@@ -12,7 +12,7 @@ const Addcart = (props) => {
     return (
         <div>
             <h3><i class="fas fa-user"></i> Add Count:{addTotal.length}</h3>
-            <h2>Total Cost:${totalSalary}</h2>
+            <h4>Total Cost:${totalSalary}</h4>
             <h6>
                 {
                  addTotal.map(add=> <Name add={add}></Name>)   
