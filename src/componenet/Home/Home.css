@@ -1,3 +1,12 @@
 .left-side{
     border: 1px solid violet;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.Hero-btn{
+    width: 150px;
+    height: 40px;
+    background-color:orange;
+    border-radius: 5px;
+   
 }

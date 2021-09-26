@@ -1,16 +1,23 @@
 
 import { useEffect, useState } from 'react';
+import Addcart from '../Addcart/Addcart.js';
 import Allworkers from '../Workers/Allworkers.js';
 import './Home.css'
 
 const Home = () => {
-    const [users,setUsers] = useState([])
+    const [users, setUsers] = useState([])
+    const [addTotal, setaddTotal] = useState([])
+    
 
     useEffect(() => {
         fetch("./fackdata.JSON")
             .then(res => res.json())
             .then(data => setUsers(data));
     }, [])
+    const handelAddToCart = (addTotalList) => {
+        const newtotal = [...addTotal, addTotalList]
+        setaddTotal( newtotal)
+    }
     
     return (
         <div>
@@ -19,6 +26,7 @@ const Home = () => {
                     <div className="row">
                         {
                             users.map(user => <Allworkers
+                                handelAddToCart={handelAddToCart}
                                 key={user.key}
                                 user={user}></Allworkers>)
                         }
@@ -26,7 +34,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="col-md-3">
-                    <h1>this is hello</h1>
+                    <Addcart addTotal={addTotal}></Addcart>
                 </div>
                 
 

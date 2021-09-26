@@ -2,8 +2,8 @@ import React from 'react';
 import './Allworkers.css'
 
 const Allworkers = (props) => {
-    const {imges, name, age, country, salary } = props.user;
-    console.log(props.user);
+    const {imges, name, age, country, salary,email } = props.user;
+    
     return (
         <div className="col-md-4">
             <div className="user-cart">
@@ -14,7 +14,8 @@ const Allworkers = (props) => {
                 <h3>Age: {age}</h3>
                 <h6>country:{country}</h6>
                 <h3>salary:<span>${salary}</span> </h3>
-                <button>Add To Cart</button>
+                <p>Email:{email}</p>
+                <button  onClick={()=>props.handelAddToCart(props.user)} className="Hero-btn"><i class="fas fa-cart-plus"></i>Add To Cart</button>
             </div>
         </div>
     );
